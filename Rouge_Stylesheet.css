@@ -19,7 +19,6 @@
       ACCORDION STYLES      
 5. TinyMCE specific fixes to Foundation show/hide styles for BBIS
 6. Annual Report microsite styles
-7. Warmest Wishes Styles 
 
 Modified by: Yael Sprikut
 -----------------------------------*/ 
@@ -84,7 +83,7 @@ body {
   }
 
 body {
-  background: white;
+  background: #C51C57;
   color: #222222;
   padding: 0;
   margin: 0;
@@ -6476,7 +6475,7 @@ a, a:visited {
   border-bottom:dotted 1px #0072ce;
 }
 a:hover, a:visited:hover, a:active {
-  color: #da291c;
+  color: #fff;
 /*   border-bottom:solid 1px #da291c; removed PNG red underline yaelsprikut */
 }
 a:focus {
@@ -6681,7 +6680,6 @@ li {
   .sm-simple,
   .sm-simple ul {
     border:0;
-    background:#fff;
   } 
 
 /* Menu items
@@ -6713,7 +6711,7 @@ li {
   } 
   .sm-simple > li > a:hover, .sm-simple > li > a:focus, .sm-simple > li > a:active, .sm-simple > li > a.highlighted{
     background:none;
-    color:#da291c;
+    color:#fff;
   } 
   
 /* Sub menu indicators
@@ -6920,8 +6918,8 @@ li {
   }/*End media query for menu*/
 
 .menucontainer {
-  border-top:3px dotted #da291c;
-  /* border-bottom:1px dotted #d1d1d1; */
+  border-top:3px solid #FF155A;
+  border-bottom:3px solid #FF155A;
 }
 .pagecontainer aside {
   background-color:#fff;
@@ -7231,7 +7229,7 @@ h3.cntower {
 
 /*--HOME PAGE--*/
 #utility {
-  background-color: #54585a;
+  background-color: #800039;
   padding: 0.5rem 0 0.5rem 0;
 }
 #smallmenu {
@@ -7274,7 +7272,7 @@ a#twooneone {
   margin-left:0;
 }
 #smallmenu .donatebtncolumn p { 
-  background:#da291c;
+  background:#00CBCC;
   width:100%;
   text-align:center;
   font-size:2rem;
@@ -7304,7 +7302,6 @@ a#twooneone {
 #header {
   padding-top:1rem;
   padding-bottom:1rem;
-  background-image: url('http://placehold.it/1000x180');
   background-repeat: no-repeat;
   height:180px;
 }
@@ -7346,7 +7343,7 @@ div#headerbtns {
   height:2.5rem;
   padding-top:0.6rem;
   border-radius: 5px;
-  background: #da291c;
+  background: #00CBCC;
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
@@ -7357,7 +7354,7 @@ div#headerbtns {
 }
 
 .donatebtn: hover{ /*yaelsprikut hover effect*/
-  background: #c42419;
+  background: #00797a;
 }
 
 /* #headerbtns fixed panel yaelsprikut */.donatebtn a {
@@ -7457,7 +7454,7 @@ hr.underline {
 #footer1  {
   padding-top:1rem;
   padding-bottom:1rem;
-  background-color:#54585a;
+  background-color:#800039;
 }
 #footer1 a {
   text-decoration:none;
@@ -7593,7 +7590,7 @@ div.sidebar {
 }
 div.landingcontent {
   padding-top:1rem;
-  border-left:1px dotted #d1d1d1;
+  border-right:1px dotted #d1d1d1;
   margin-bottom:1rem;
   margin-top:1rem;
   padding-top:0;
@@ -8873,35 +8870,3 @@ a.orbit-prev, a.orbit-prev:visited, a.orbit-next, a.orbit-next:visited {
   }
 
 /*-----------END 6. Annual Report microsite styles-----------*/
-/*-----------7. Warmest Wishes Styles -----------*/
- img.spacing{
-    position: relative; 
-    bottom: 2.5rem; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    }
-
-    p.sidebar-story2{
-    position: relative; 
-    bottom: 1.5rem; 
-    padding-left: 0.938em;
-    }
-
-
-
-    @media screen  and /*!YUI Compressor*/  (min-width: 640px) and /*!YUI Compressor*/ (max-width: 870px) {  
-    img.spacing {
-    position: relative; 
-    bottom: 1.5rem; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    padding-bottom: 0.625em;
-
-    }
-
-
-    }
-
-/*-----------END 7. Warmest Wishes Styles-----------*/
