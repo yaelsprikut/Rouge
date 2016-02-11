@@ -79,6 +79,7 @@ body {
 
 body {
   background: #C51C57;
+  background-image: url("https://test.unitedwaytyr.com/image/mainwebsite/1-home/Website-Background.jpg");
   color: #222222;
   padding: 0;
   margin: 0;
@@ -6434,6 +6435,7 @@ li {
 .menucontainer {
   border-top:3px solid #FF155A;
   border-bottom:3px solid #FF155A;
+  background:#C51C57;
 }
 .pagecontainer aside {
   background-color:#fff;
@@ -6817,6 +6819,7 @@ a#twooneone {
   padding-top:1rem;
   padding-bottom:1rem;
   background-repeat: no-repeat;
+  background: #C51C57;
 }
 div#headerbtns {
   /*padding-left:2.3em;*/
@@ -6894,6 +6897,7 @@ div#headerbtns {
 }
 #contentbuckets {
   padding:1rem 0;
+  background: #C51C57;
 }
 #contentbuckets .content1, #contentbuckets .content3 {   
   padding:0;
