@@ -79,7 +79,7 @@ body {
 
 body {
   background: #C51C57;
-  background-image: url("https://test.unitedwaytyr.com/image/mainwebsite/1-home/Website-Background.jpg");
+  background-image: url("https://www.unitedwaytyr.com/image/mainwebsite/e_events/2016-rouge/Website-Background.jpg");
   color: #222222;
   padding: 0;
   margin: 0;
@@ -4772,7 +4772,7 @@ kbd {
 .hide-for-xlarge-only,
 .hide-for-xxlarge-up,
 .hide-for-xxlarge-only {
-  display: inherit !important; }
+ /*  display: inherit !important; */ }
 
 .hide-for-small,
 .hide-for-small-only,
@@ -4836,7 +4836,7 @@ th.hide-for-xxlarge-up {
   .hide-for-xlarge-only,
   .hide-for-xxlarge-up,
   .hide-for-xxlarge-only {
-    display: inherit !important; }
+    /* display: inherit !important; */ }
 
   .show-for-small,
   .show-for-small-only,
@@ -6438,17 +6438,17 @@ li {
   background:#C51C57;
 }
 .pagecontainer aside {
-  background-color:#fff;
+  background-color:#C51C57;
 }
 .pagecontainer aside {
-  background-color:#dddddd;  
+  background-color:#C51C57;
 }
 /* fix for smallnav displaying before JavaScript runs */
 .smallnav{visibility: hidden;}
 aside .smallnav{visibility: visible;}
 /* end small nav fix */
 .smallnav {
-  background-color:#54585a;
+  background-color:#800039;
   color:#fff;
   padding-bottom:0.5rem;
 }
@@ -6456,7 +6456,7 @@ aside .smallnav{visibility: visible;}
   padding-left:1rem;
 }
 .smallnav .sm-simple > li {
-  background-color:#54585a;
+  background-color:#800039;
 }
 #navicon {
   float:left;
@@ -6749,8 +6749,8 @@ h3.cntower {
   padding: 0.5rem 0 0.5rem 0;
 }
 #smallmenu {
-  border-bottom:1px dotted #d1d1d1;
   padding-bottom:0.5rem;
+  background-color: #C51C57;
 }
 .socmed {
   margin-right:0.5rem;
@@ -6894,18 +6894,21 @@ div#headerbtns {
 }
 #slideshow div {
   padding:0;
+  background: #C51C57;
 }
 #contentbuckets {
   padding:1rem 0;
   background: #C51C57;
+  border-top:3px solid #FF155A;
+  border-bottom:3px solid #FF155A;
 }
 #contentbuckets .content1, #contentbuckets .content3 {   
   padding:0;
 }
 #contentbuckets .content2 {
   padding:0;
-  border-left:1px dotted #d1d1d1;  
-  border-right:1px dotted #d1d1d1;  
+  border-left:3px dotted #d1d1d1;  
+  border-right:3px dotted #d1d1d1;  
 }
 .bucketinner {
   margin:0 1rem 0 1rem;   
@@ -6971,7 +6974,7 @@ hr.underline {
 #footer1  {
   padding-top:1rem;
   padding-bottom:1rem;
-  background-color:#800039;
+  background-color:#C51C57;
 }
 #footer1 a {
   text-decoration:none;
