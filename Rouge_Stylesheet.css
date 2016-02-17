@@ -6437,6 +6437,10 @@ li {
   border-bottom:3px solid #FF155A;
   background:#C51C57;
 }
+.menucontainer-2 {
+  border-top:3px solid #FF155A;
+  background:#C51C57;
+}
 .pagecontainer aside {
   background-color:#C51C57;
 }
@@ -6902,6 +6906,13 @@ div#headerbtns {
   border-top:3px solid #FF155A;
   border-bottom:3px solid #FF155A;
 }
+
+#contentbuckets-2 {
+  padding:1rem 0;
+  background: #C51C57;
+  border-top:3px solid #FF155A;
+}
+
 #contentbuckets .content1, #contentbuckets .content3 {   
   padding:0;
 }
@@ -6950,6 +6961,7 @@ div#headerbtns {
   font-size:1rem;
   margin-bottom: 0.5rem;
 }
+
 #contentbuckets p.infographic {  
 color: #0072ce; 
 font-size: 50pt; 
