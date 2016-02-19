@@ -20,6 +20,22 @@ Modified by: Yael Sprikut
 
 /*-----------1. Fonts-----------*/
 /*This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com*/
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v10/yg0glPPxXUISnKUejCX4qfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v10/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 @font-face{
 font-family:"Avenir LT W01 55 Roman";
@@ -2709,10 +2725,10 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #C51C57;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -5194,614 +5210,6 @@ th.hide-for-touch {
 
 /*-----------3. BBIS Part styles-----------*/
 
-/*QUICK SEARCH*/
-
-.QuickSearchFormTable td:first-child {
-  display:none;
-}
-.QuickSearchFormTable input.QuickSearchTextbox {
-  margin:0;   
-  padding:0;
-  border:0;
-  height:100%;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;  
-  padding-left:0.3rem;
-}
-.QuickSearchButton {
-  background-color:#54585a;
-  border:0;
-  color:#fff;
-  padding:0.1rem 0.2rem;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;  
-  border-radius:5px;
-  position:relative;
-  behavior: url(pie/PIE.htc);
-}
-.QuickSearchFormTable td {
-  padding:0;
-  margin:0;
-}
-.QuickSearchFormTable input.QuickSearchTextbox {
-  margin-top:0.2rem;
-}
-.QuickSearchContainer {
-  background:#fff; 
-  padding:0.1rem; 
-  padding-top:0.2rem;  
-  float:right;
-  margin-left:0.5rem;
-  margin-top:-0.1rem;
-  height:1.8rem;
-  width:45%;
-  border-radius:5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;   
-  position:relative;
-  behavior: url(pie/PIE.htc);
-}
-.QuickSearchContainer table.QuickSearchFormTable {
-margin-bottom: 0;
-border: 0;
-}
-.smallsearch {
-  padding:1rem 1rem 0.5rem 0;
-}
-.smallsearchcontainer {
-  padding:0.1rem;
-  margin:0;
-  padding-top:0.2rem; 
-  width:90%;  
-  border-radius:5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  background:#fff;
-}
-.smallsearchcontainer table.QuickSearchFormTable {
-margin-bottom: 0;
-border: 0;
-}
-/*Hide the word Search when the user types in the field*/
-.QuickSearchFormTable input[type="text"]:focus {
-}
-/*END QUICK SEARCH*/
-
-/*SEARCH RESULTS PAGE*/
-table.SearchFormTable, table.SearchFormTable table {
-  border:0;
-}
-input.SearchButton {
-  background-color:#54585a;
-  border:0;
-  color:#fff;
-  padding:0.1rem 0.2rem;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;  
-  border-radius:5px;
-  margin-bottom:1rem;
-}
-input.SearchTextBox {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;  
-  border-radius:5px;  
-}
-table.SearchFormTable {
-  margin-bottom:0;
-}
-table.SearchFormTable table td {
-  padding: 0 0.5rem 0 0;
-}
-table.SearchFormTable td {
-  padding-bottom:0;
-}
-tr.SearchOddRowStyle td.BBSearchDescriptionStyle {
-  background-color:#fff;
-}
-tr.SearchEvenRowStyle td.BBSearchDescriptionStyle {
-  background-color:#fff;
-}
-table.SearchTable tr.SearchHeaderRow td {
-  font-size:1.1rem;
-  padding-bottom:1rem;
-}
-tr.SearchHeaderRow td span {
-  padding-bottom:3rem;
-}
-table.SearchTable tr.SearchEvenRowStyle td,
-table.SearchTable tr.SearchOddRowStyle td
- {
-  padding-top:1rem;
-}
-table.SearchTable tr.SearchEvenRowStyle td a,
-table.SearchTable tr.SearchOddRowStyle td a
- {
-  font-weight:bold;
-}
-table.SearchTable tr.SearchEvenRowStyle td.BBSearchDescriptionStyle, 
-table.SearchTable tr.SearchOddRowStyle td.BBSearchDescriptionStyle {
-  border-bottom:2px solid #ddd;
-  white-space:normal;
-  padding-bottom:1rem;
-}
-
-
-/*END SEARCH RESULTS PAGE*/
-
-/*/*EVENT REGISTRATION PART*/
-
-/*Increase width of whole table*/
-table[id*="tblMain"].EventTable {
-  width:100%;
-  padding-top:0;
-}
-.landingcontent .EventTable .w100p table,
-.landingcontent .EventTable table {
-  width:100%;
-}
-/*Reduce padding between rows*/
-.EventTable table.w100p {
-  margin-bottom:0;  
-}
-.EventTable td, .EventTable table.w100p {
-  padding:0;
-}
-/*Increase width of progress table*/
- .landingcontent table[id$="tblProgress"] {
-    width:100%; 
-}
-/*Left-align event title*/
-.EventItemTitleName {
-  text-align:left;  
-}
-/*Increase width of summary table*/
- .landingcontent table.w100p {
-    width:100%;
-}
-/*Increase width of summary table cell*/
-.EventTable .EventItemRegistrationControlCellDescription,
-.EventTable .EventItemRegistrationControlCellNumParticipants
- {
-  width:20%;
-}
-.EventTable .EventItemRegistrationControlCellPrice {
-  width:40%;
-  vertical-align:top;
-}
-/*Change background color of progress cells*/
-.EventTable .EventProgressCell {
-  background-color:#de7c00;
-  color:#fff;
-}
-.EventTable span.EventItemTitleDescription {
-  display:none;
-}
-.EventTable .EventProgressCellFuture {
-  background-color: #fff;
-}
-.EventTable .EventProgressCellPast {
-  background-color: #dddddd;
-}
-/*Remove borders and padding from around tables*/
-.EventTable table[id$="Wizard1"], table[id$="Wizard1"] table { 
-  border:0;
-}
-.EventTable table[id$="Wizard1"] td { 
-  padding:0;
-  vertical-align:top;
-  
-}
-.EventTable .DonationValidationSummary {
-  border:1px solid #ddd;
-  font-size:0.9rem;
-  padding:0.5rem;
-}
-/*Hide the Quantity and Pricing header*/
-.EventTable span[id$="lblPriceHeader"] {
-  display:none;
-}
-/*Increase width of number of tickets dropdown*/
-.EventTable .EventItemRegistrationControlCellQuantity select {
-  width:4rem !important;
-  margin-right:0.5rem;
-}
-/*Line up field labels horizontally*/
-.EventTable .EventItemRegistrationControlCellDescription label[id$="lblDescription_0"] {
-  margin-bottom:0;
-}
-/*Reduce width of ticket selection area so that price is not so far to the right*/
-.EventTable .EventItemRegistrationsTable {
-  width:80%;
-  position:relative;
-  left:-1rem;
-}
-/*Step 1 - Make the ticket description the same font size as the surrounding text */
-.EventTable td.EventItemRegistrationControlCellDescription label {
-  font-size:1.0rem;
-}
-/*Increase space between event title and date*/
-.EventTable span.EventItemTitleName {
-  display:block;
-  padding-bottom:1rem;
-}
-/* change styling of comm-pref submit button yaelsprikut*/
-.BBSequenceMapNavigationButton{
-   background-color: #64a70b;
-   color:#fff;
-   text-transform:uppercase;
-   padding: 0.5rem 0 0.5rem 0;
-   width:10rem;
-   border:1px solid #64a70b;
-  -webkit-border-radius: 0.5rem; 
-  -moz-border-radius: 0.5rem; 
-   border-radius:  0.5rem;
-   position:relative;
-   behavior: url(pie/PIE.htc);
-}
-/*Change look of the submit button*/
-.EventTable table[id$="Wizard1"] table td input.BBFormSubmitButton {  
-  background-color: #de7c00;
-  color:#fff;
-  text-transform:uppercase;
-  padding: 0.5rem 0 0.5rem 0;
-  width:6rem;
-  border:1px solid #fff;
-  border-radius:  0.5rem;
-  cursor:pointer;
-}
-/* change color on disabled yaelsprikut*/
-.EventTable table[id$="Wizard1"] table td input.BBFormSubmitButton:active,
-.EventTable table[id$="Wizard1"] table td input.BBFormSubmitButton :disabled{
-  background-color: #854a00;
-}
-/*Right-align the Next buttons*/
-.landingcontent table.buttonsTable {
-  width:auto;
-}
-/*Increase size of font throughout steps*/
-.EventTable table tr td {
-  font-size:1rem;
-}
-/*Step 1 - Increase padding on right of ticket name to accommodate long ticket names*/
-.EventTable td.EventItemRegistrationControlCellDescription {
-  width:60%;
-}
-.EventTable td.EventItemRegistrationControlCellDescription label {
-  display:block;
-  padding-right:0.8rem; 
-}
-/*Increase width of Step 2 table*/
-.landingcontent table.EventTable table.w100p {
-  width:100%;
-}
-/*Decrease width of Step 2 table that contains number of tickets*/
-.landingcontent table.EventTable table[id*="dgPriceList"] table.w100p {
-  width:100%;
-}
-/*Step 2: Increase width of cell that contains ticket name*/
-.EventTable .w100p td.EventTicketsBodyCell:nth-child(2) {
-  width:35% !important;
-  padding-right:1rem !important;
-}
-/*Hide the title in Step 2 and 3 - "Attendees", "Payment"*/
-.EventTable td.EventSectionHeader {
-  display:none;
-}
-/*Remove grey background behind total in Step 2*/
-.EventTable .EventAttendeesOverallTotal, .EventTable .EventAttendeesCurrent {
-  background-color: #fff;
-}
-/*Decrease width of left column in Meal Preference table in Step 2*/
-.EventTable table[id$="dgRegistrantList_0"] td.BBFieldCaption:first-child {
-  width:25%;
-}
-/*Left-align questions of Meal Preference table in Step 2*/
-.EventTable table[id$="dgRegistrantList_0"] .BBFieldCaption {
-  text-align:left;
-}
-/*Make labels for checkboxes display inline with the checkbox*/
-.EventTable table.BBFormChecklist label {
-  display:inline;
-  padding-left:0.5rem;
-  height:2rem;
-}
-/*Prevent labels on checkboxes from breaking onto two lines*/
-.landingcontent table.EventTable table.LoginFormCheckList {
-  width:100%;
-}
-/*Add space between rows in Qty/Selection/etc. summary box*/
-.EventTable table[id*="dgAttendeesSummary_dgEventTickets"] td,
-.EventTable table[id*="dgAttendeesSummary2"] td
- {
-  padding-bottom:0.5rem;
-  background-color: white; /* grey border gone yaelsprikut*/
-}
-/*Increase space below event name in summary page*/ 
-.EventTable tr.BBListEvenRowStyle td.EventItemRegistrantsHeader {
-  /*padding-top:1rem;*/
-  padding-bottom:0.5rem;
-}
-/*Step 2: Hide the event name from displaying again above registrant section*/
-.EventTable .EventItemRegistrantsEventName {
-  display:none;
-}
-/*Remove extra space between Attendee listings*/
-.EventTable table[id$="dgRegistrantList_0"] {
-  margin-bottom:0;
-}
-/*Step 2: Remove grey background on empty row at bottom*/
-.EventTable .BBListOddRowStyle {
-  background-color:transparent;
-}
-/*Step 2: Reduce width of New Attendee text inputs so that the mandatory asterisk is at the end of the field instead of below it*/
-.EventTable input.EventItemRegistrantTextbox {
-  display:inline;
-  width:90%;
-}
-/*Step 2: Align the New Attendee New Address dropdown to align with the other fields*/
-.EventTable table.w100p td select[id*="ddlAddress"] {
-  margin-left: 0.5rem;
-}
-/*Step 2: Increase width of Address textarea to 100%*/
-.EventTable .DonationCaptureTextArea {
-  width:100%;
-}
-/*Remove grey background on Step 3 above total amount*/ 
-.EventTable .EventAttendeesComplete {
-  background-color: #fff;
-}
-/*Style the Step 3 headings*/
-.EventTable .BBListingHeading {
-  background-color: #ffffff;
-  text-align: left;
-}
-.EventTable .DonationCaptureFieldCaption {
-  background: none repeat scroll 0 0 #fff;
-}
-.EventTable .BBListingHeading span {
-  color:#de7c00;
-  font-weight:bold;
-  font-size:1.3rem;
-  display:block;
-  position: relative;
-  margin-top:1rem;
-  margin-bottom:2rem; /*event padding yaelsprikut*/
-}
-.EventTable .BBListingHeading, .EventTable .BBFormTable {
-    border: 0pt;
-}
-/*Draw a line under the section headings commented out by yaelsprikut*/
-/* .EventTable .BBListingHeading span:after {
-  content: '\A ';
-  white-space: pre;
-  position: absolute;
-  left:0rem;
-  width:100%;
-  bottom:-20%;
-  border-bottom: 1px solid #54585a;
-} */
-/*Increase space under headings*/
-.EventTable tbody:before {
- /* content:"\a";
-  white-space: pre;*/
-}
-/*Top-align meal preference question, etc.*/
-.EventTable .BBFieldCaption {
-  vertical-align:top;
-}
-/*Add space between meal preference question and options*/
-.EventTable .BBFieldCaption label {
-  margin-right:1rem;
-}
-/*Move the mandatory asterisks up*/
-.EventTable .BBFormRequiredFieldMarker {
- display:inline;
- /* font-size: 1.3em; */
-}
-/*Add space under the amount in Step 3*/
-.EventTable tr[id$="DonationCapture1_trAmount"] td.BBFieldCaption,
-.EventTable tr[id$="DonationCapture1_trAmount"] td.BBFieldControlCell
-{
-  padding-bottom:1rem;
-}
-/*Add space under the headers in Step 3*/
-.EventTable .DonationCaptureListingHeading {
-  margin-bottom:1rem;
-}
-/*Align the credit card fields*/
-.EventTable td.sDonationCaptureFieldControlCell table {
-  width:100%;
-}
-.EventTable td.sDonationCaptureFieldControlCell table td {
-  width:50%;
-}
-.EventTable td.sDonationCaptureFieldControlCell table td select {
-  width:90%;
-}
-.EventTable td.sDonationCaptureFieldControlCell table td label {
-  display: inline;
-}
-/*Reduce size of Step 4 H2 heading*/
-.EventTable h2 {
-  font-size:2rem;
-}
-/*Remove grey background behind labels on Step 4*/
-.EventTable .BBEventConfirmation label.BBFieldCaption {
-  background:#fff;
-}
-/*Add padding between the rows in the Step 4 summary*/
-.EventTable table[id$="Wizard1"] table td.dInlineBlock,
-.EventTable table[id$="Wizard1"] table td[id*="DonationCaptureDisplay1"],
-.EventTable table[id$="Wizard1"] table td.DonationCaptureReadonlyValue {
-  padding-bottom:1rem;
-  vertical-align:top;
-} 
-.EventTable table[id$="Wizard1"] table td.BBFieldControlCell,
-.EventTable table[id$="Wizard1"] table td.DonationCaptureReadonlyValue {
-  vertical-align:top;
-  padding-left:0.5rem;
-} 
-.EventTable table[id$="Wizard1"] table td.DonationCaptureReadonlyValue table td {
-  vertical-align:top;
-  padding-left:0rem;
-} 
-.EventTable table[id$="Wizard1"] table td span[id$="cboCardType"]  {
-  display:block;
-  padding-left:0.5rem;
-}
-
-/*Changes to Events form for tablets and smaller*/
-@media screen and  /*!YUI Compressor*/  (max-width: 768px) {
-
-  .EventTable .BBFieldCaption {
-    text-align:left;
-  }
-  .EventTable .EventItemRegistrantSelectList,
-  .EventTable .BBFormTextbox,
-  .EventTable .BBFormTextArea {
-    width: 80%; /*yaelsprikut*/
-  }  
-  /*Step 2 - Increase space between Individual Attendees and price*/  
-  .EventTable .EventItemRegistrationControlCellPrice span {
-    display:block;
-    /*margin-top:1rem;*/
-  }
-  /*Step 2 - Left-align the price*/
-  .EventTable .EventItemRegistrationControlCellPrice {
-    text-align:left;
-  }
-}
-
-/*insert new size here yaelsprikut*/
-
-
-/*Changes to Events form for phones*/
-@media(max-width: 480px) {
-
-  /*Hide the steps table*/
-  .EventTable table[id$="tblProgress"] {
-    display:none;    
-  }
-  /*Step 1 - Increase width of ticket selection table in mobile*/
-  .EventTable .EventItemRegistrationControlCellDescription,
-  .EventTable .EventItemRegistrationControlCellNumParticipants,
-  .EventTable .EventItemRegistrationControlCellPrice {
-    width:98%;
-  }
-  /*Step 2- Space out the ticket dropdown and price cells vertically*/
-  .EventItemRegistrationsTable .EventItemRegistrationControlCellQuantity,
-  .EventItemRegistrationsTable .EventItemRegistrationControlCellDescription,
-  .EventItemRegistrationsTable .EventItemRegistrationControlCellNumParticipants,
-  .EventItemRegistrationsTable .EventItemRegistrationControlCellPrice
-  {
-    padding-bottom:2rem;
-  }
-  /* fix for mobile to stop table cut off*/
-  /* .EventTable{ display:block; } yaelsprikut*/
-  .EventTable tr{display:block;}
-  .EventTable td{float:left; clear: both; width: 100%;}
-  /* .DonationFormTable{ display:block; }
-  .DonationFormTable tr{ display:block; } */
-  .DonationFormTable td{float:left; clear: both; width: 100%;}
-
-  /* part is in test mode */
-  [id*="TestModeWarning"] span{max-width:80%;}
-
-  /* display buttons left and right */
-  .EventTable .buttonsTable {width: 100%; }
-  .EventTable .buttonsTable tr td:first-child input{float: left;}
-  .EventTable .buttonsTable tr td:first-child + td input{float: right;}
-  .EventTable .buttonsTable tr td:first-child {width: 25%; float: left; clear: none;}
-  .EventTable .buttonsTable tr td:first-child + td {width: 25%; float: right; clear: none;}
-  .EventTable [id*="AttendeesSummary2_dgEventTickets"]{
-  margin-bottom: 0;
-  }
-  .EventTable .EventTicketsHeaderCell{
-  display: none;
-  }
-  .EventTable .EventTicketsBodyCell {
-  width:100% !important;
-  }
-  .EventTable .EventTicketsBodyCell [id*="lblQty"]:before{
-  content:'Qty:\0020';
-  display: inline;
-  }
-  .EventTable .EventTicketsBodyCell [id*="lblDescription"]:before{
-  content:'Selection:\0020';
-  display: inline;
-  }
-  .EventTable .EventTicketsBodyCell [id*="lblAttendees"]:before{
-  content:'Attendees:\0020';
-  display: inline;
-  }
-  .EventTable .EventTicketsBodyCell [id*="lblPrice"]:before{
-  content:'Price:\0020';
-  display: inline;
-  }
-  .EventTable .EventTicketsBodyCell [id*="lblPriceC"]:before{
-  content:' ';
-  display: inline;
-  }
-  .EventTable .EventTicketsBodyCell [id*="lblTotal"]:first-child:before{
-  content:'Sub Total:\0020';
-  display: inline;
-  }
-  .EventTable .EventAttendeesOverallTotal [id$="dgAttendeesSummary_lblEventTotal"]:before{
-  content:'Total:\0020';
-  display: inline;
-
-  }
-  .EventTable .EventAttendeesCurrent tbody tr:first-child td:first-child{
-    display: none;
-  }
-  /*Remove border from table in Step 3*/
-  .EventTable table[id$="Wizard1"], table[id$="Wizard1"] table { 
-    border:0;
-      background-color:white; /*remove grey padding yaelsprikut*/
-  }  
-  /*Prevent default iOS button styling from overriding your button styles*/
-  .EventTable table[id$="Wizard1"] table td input.BBFormSubmitButton {  
-    -webkit-appearance: none;
-  }
-  /*Step 1 & Step 2: Increase width of ticket name area to accommodate long ticket names*/
-  .EventTable td.EventItemRegistrationControlCellDescription,
-  .landingcontent table.EventTable table[id*="dgPriceList"] table.w100p {  
-    width: 100%;
-  }
-  .EventTable .w100p td.EventTicketsBodyCell:nth-child(2) {
-    width: 100% !important;
-  }
-  /*Step 1: Increase space between Ticket Description and Attendees*/
-  .EventTable .EventItemRegistrationControlCellDescription label[id$="lblDescription_0"] {
-    margin-bottom: 1rem;
-  }
-  /*Step 2: Increase width of fields*/
-  .EventTable .EventItemRegistrantSelectList, .EventTable .BBFormTextbox, .EventTable .BBFormTextArea {
-    width: 100%;
-  }
-  .EventTable select[id*="ddlAddress"] {
-    width: 88%;
-  }
-  .EventTable td.BBFormRequiredFieldMarker,
-  .EventTable td[id*="AddressCtl"] {
-    display: inline;
-  }
-  .EventTable td.BBFormRequiredFieldMarker {
-    width: 50%;
-  }
-  /*Increase width of Country field on mobile*/
-  .EventTable select.BBFormSelectList {
-    width:100%;
-  }
-  
-}
-
-
-
-/*END EVENT REGISTRATION PART*/
-
-
 /*DOCUMENTS UPLOADER PART*/
 
 /*Remove borders around tables*/
@@ -5875,11 +5283,10 @@ p.nopad {
   }
 h1, h2, h3, h4 {
  /* font-family: "Avenir LT W01 55 Roman", Arial, "Helvetica Neue", Helvetica, sans-serif;  */
-  font-family: "Avenir LT W01 55 Roman", serif; 
-  font-weight:bold;
+  font-family: "Oswald", sans-serif; 
   font-size: 2rem;
   line-height: 2.3rem; 
-  color:#da291c;
+  color:#C51C57;
 }
 h1.red-background {
   background-color:#da291c;
@@ -5986,8 +5393,8 @@ p span.infographic-red {
 
 /*Set the default style for links*/
 a, a:visited {
-  color:#0072ce;
-  border-bottom:dotted 1px #0072ce;
+  color:#C51C57;
+  border-bottom:dotted 1px #C51C57;
 }
 a:hover, a:visited:hover, a:active {
   color: #fff;
@@ -6067,6 +5474,9 @@ a:active.readmore-blue, a:active.readmore-red, a:active.readmore-yellow, a:activ
   color:#da291c;
   text-decoration:underline;
 }
+
+a.rouge{color:#fff; border-bottom:dotted 2px #fff !important;}
+
 a:hover.readmore-white, a:focus.readmore-white, a:active.readmore-white{
   color:#fff;
   text-decoration:underline;
@@ -6539,163 +5949,6 @@ div:active.smallemail {
   margin-top:0;
   margin-bottom:2.5rem;
 }
-h3.cntower {
-  font-size:1.5rem;
-  color:#e35205;
-  font-weight:bold; 
-  margin-top:1rem; 
-}
-/*-CN Tower page styles - LB 13Aug2014-*/
-.cntower .register-btn-container {
-  width:100%;
-  margin-bottom:1rem;
-  margin-top:0;
-}
-/*Register buttons*/
-.cntower .register-btn {
-  background-color:#da291c;
-  color:#fff;
-  text-align:center;
-  border-radius:0.5rem;
-  font-size:1.0rem;
-  width:7rem;
-  float:left;
-  padding:1.3rem 0.5rem; 
-  margin-right:0.5rem;
-}
-.cntower div.register-btn-container div.register-btn a,
-.cntower div.register-btn-container div.register-btn a:visited
- {
-  color:#fff;
-  text-decoration:none;
-  border-bottom: 0;
-}
-.cntower div.register-btn-container div.register-btn a:hover,
-.cntower div.register-btn-container div.register-btn a:visited:hover {
-  color:#fff;
-  text-decoration:underline;
-  border-bottom: 0;  
-}
-/*Login buttons*/
-.cntower .login-btn {
-  background-color:#54585a;
-  color:#fff; 
-  text-align:center;
-  border-radius:0.5rem; 
-  font-size:1.0rem;  
-  width:7rem;
-  float:left;
-  padding:1.3rem 0.5rem; 
-  margin-right:0.5rem;
-}
-.cntower div.register-btn-container div.login-btn a,
-.cntower div.register-btn-container div.login-btn a:visited
-{
-  text-decoration:none;
-  border-bottom: 0px dotted #fff;
-  color:#fff;  
-}
-.cntower div.register-btn-container div.login-btn a:hover,
-.cntower div.register-btn-container div.login-btn a:visited:hover {
-  text-decoration:underline;
-  border-bottom: 0px dotted #fff;
-  color:#fff;
-}
-/*Sponsor buttons*/
-.cntower .sponsor-btn {
-  background-color:#41b6e6;
-  color:#fff; 
-  text-align:center;
-  border-radius:0.5rem; 
-  font-size:1.0rem;  
-  width:7rem;
-  float:left;
-  padding:0.5rem;
-  line-height:1.3rem;
-}
-.cntower div.register-btn-container div.sponsor-btn a,
-.cntower div.register-btn-container div.sponsor-btn a:visited
-{
-  text-decoration:none;
-  border-bottom: 0px dotted #fff;
-  color:#fff;  
-}
-.cntower div.register-btn-container div.sponsor-btn a:hover,
-.cntower div.register-btn-container div.sponsor-btn a:visited:hover {
-  text-decoration:underline;
-  border-bottom: 0px dotted #fff;
-  color:#fff;
-}
-/*Other CN Tower styles*/
-.cntowertitle {
-  margin-top:0.5rem;
-}
-.cntower h2 {
-  padding-bottom:0;
-  margin-bottom:0;
-  padding-top:1rem;
-  color:#000;
-  font-family: "Avenir LT W01 85 Heavy", Arial, "Helvetica Neue", Helvetica, sans-serif;   
-}
-/*Small devices: Centre and stack the register/login/sponsor buttons*/
-  @media (min-width: 640px) and /*!YUI Compressor*/ (max-width : 780px) {  
-
-    .cntower .register-btn-container {
-      width:7rem;
-      margin-left:25%;
-    }
-    .cntower .register-btn,
-    .cntower .login-btn {
-      margin-bottom:1rem;
-    }
-
-  }
-  @media (max-width : 420px) {  
-
-    .cntower .register-btn-container {
-      width:7rem;
-      margin-left:25%;
-    }
-    .cntower .register-btn,
-    .cntower .login-btn {
-      margin-bottom:1rem;
-    }
-
-  }
-/*End CN Tower page styles*/
-
-
-/*Rat Race styles*/
-
-.ratrace {
-  margin-left:auto;
-  margin-right:auto;
-  width:10rem;
-}
-.ratrace .btn {
-  background-color:#de7c00;
-  color:#fff;
-  text-align:center;
-  border-radius:0.4rem;
-  font-size:1.0rem;
-  width:10rem;
-  padding:0.5rem 0.5rem;
-  margin-bottom:1rem;
-}
-.ratrace div.btn a,
-.ratrace div.btn a:visited
- {
-  color:#fff;
-  text-decoration:none;
-  border-bottom: 0;
-}
-.ratrace div.btn a:hover,
-.ratrace div.btn a:visited:hover {
-  color:#fff;
-  text-decoration:underline;
-  border-bottom: 0;  
-}
-/*End Rat Race styles*/
 
 /*Rouge styles*/
 
@@ -8051,3 +7304,27 @@ ul.threecolumn li {
 #tinymce  #orbitGuide{display: block;}
 
 /*-----------END 5. TinyMCE specific fixes-----------*/
+.fancy {
+  position: relative;
+  text-align: center;
+}
+
+.fancy span{
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+p.fancy:before {
+  background: #ddd;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+    top: 50%;
+  width: 100%;
+}
+p.fancy:before {
+  left: 0;
+}
