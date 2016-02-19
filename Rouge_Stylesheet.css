@@ -5756,11 +5756,11 @@ li {
         border-left: 3.0rem solid transparent;
       }
       .sm-simple > li > a:hover, .sm-simple > li > a:focus, .sm-simple > li > a:active {
-        background:#da291c;
+        background:#4c0022;
         color:#fff;        
       }
       .sm-simple > li > a.has-submenu.highlighted{
-        background:#da291c;
+        background:#4c0022;
         color:#fff;
         border-top:2px solid #fff;
       }
