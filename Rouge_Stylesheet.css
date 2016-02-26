@@ -2735,7 +2735,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: #6f6f6f;
+    color: #C51C57;
     line-height: 0; }
 
 h1 {
@@ -4788,7 +4788,7 @@ kbd {
 .hide-for-xlarge-only,
 .hide-for-xxlarge-up,
 .hide-for-xxlarge-only {
- /*  display: inherit !important; */ }
+  display: inherit !important; }
 
 .hide-for-small,
 .hide-for-small-only,
@@ -4806,6 +4806,7 @@ kbd {
 .show-for-xxlarge-up,
 .show-for-xxlarge-only {
   display: none !important; }
+.show-for-large-up-2{display: inherit !important;}
 
 /* Specific visibility for tables */
 table.show-for-small, table.show-for-small-only, table.show-for-medium-down, table.show-for-large-down, table.hide-for-medium, table.hide-for-medium-up, table.hide-for-medium-only, table.hide-for-large, table.hide-for-large-up, table.hide-for-large-only, table.hide-for-xlarge, table.hide-for-xlarge-up, table.hide-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
@@ -4852,7 +4853,7 @@ th.hide-for-xxlarge-up {
   .hide-for-xlarge-only,
   .hide-for-xxlarge-up,
   .hide-for-xxlarge-only {
-    /* display: inherit !important; */ }
+    display: inherit !important; }
 
   .show-for-small,
   .show-for-small-only,
@@ -5348,7 +5349,7 @@ h2.red-background {
 h3 {
   font-size:1.1rem;
   font-weight:bold;
-  color:#555;
+  color:#C51C57;
   line-height:1.3rem;
 }
 p.darkbluetext {
@@ -5397,7 +5398,7 @@ a, a:visited {
   border-bottom:dotted 1px #C51C57;
 }
 a:hover, a:visited:hover, a:active {
-  color: #fff;
+  color: #dc769a;
 /*   border-bottom:solid 1px #da291c; removed PNG red underline yaelsprikut */
 }
 a:focus {
@@ -5611,7 +5612,7 @@ li {
 ===================*/
   .sm-simple a {
     padding:0.5rem 0.5rem;
-    color:#000;
+    color:#fff;
     font-size:0.9rem;     
     text-decoration:none;
     font-weight:bold;
@@ -5636,7 +5637,7 @@ li {
   } 
   .sm-simple > li > a:hover, .sm-simple > li > a:focus, .sm-simple > li > a:active, .sm-simple > li > a.highlighted{
     background:none;
-    color:#fff;
+    color:#000;
   } 
   
 /* Sub menu indicators
@@ -5952,6 +5953,11 @@ div:active.smallemail {
 
 /*Rouge styles*/
 
+a.rouge-bucket{
+	color: #fff;
+	
+}
+
 .rouge .register-btn {
   background-color:#da291c;
   text-align:center;
@@ -6111,16 +6117,16 @@ div#headerbtns {
 }
 
 .donatebtn {  
+  width: 13.5rem;
   text-align: center; 
-  width: 9.8rem;
-  height:2.5rem;
+  height:2.6rem;
   padding-top:0.6rem;
   border-radius: 5px;
   background: #00CBCC;
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
-  font-size:0.8rem;
+  font-size:1rem;
   margin-left:1rem;
   position:relative;
   behavior: url(pie/PIE.htc);
